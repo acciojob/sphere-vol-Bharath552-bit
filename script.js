@@ -1,5 +1,13 @@
-function volume_sphere() {
-    //Write your code here
+function volume_sphere(event) {
+	event.preventDefault()
+    const radius=Number(event.target.radius.value);
+	const volume=event.target.volume;
+	if(Number(radius)==NaN || radius<0){
+		volume.value=NaN
+		return;
+	}
+	volume.value=(4/3*Math.PI*(radius*radius*radius)).toFixed(4);
+		
   
 } 
 
