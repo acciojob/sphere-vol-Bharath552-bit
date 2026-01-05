@@ -6,7 +6,7 @@ function volume_sphere(event) {
 		volume.value="NaN"
 		return;
 	}
-	volume.value=(4/3*Math.PI*(radius*radius*radius)).toFixed(4)
+	volume.value=((4/3)*Math.PI*(radius*radius*radius)).toFixed(4)
 		
   
 } 
