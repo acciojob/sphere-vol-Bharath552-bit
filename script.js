@@ -1,6 +1,6 @@
 function volume_sphere(event) {
 	event.preventDefault()
-    const radius=Number(event.target.radius.value);
+    const radius=parseFloat(event.target.radius.value);
 	const volume=event.target.volume;
 	if(isNaN(radius) || radius<=0){
 		volume.value="NaN"
